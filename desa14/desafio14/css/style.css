@@ -1,0 +1,150 @@
+/* https://coolors.co/f3faf6-ffd8d8-0c0a0a-c6c6c6-200a35 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+
+body {
+    background-color: #F3FAF6;
+    color:#0C0A0A;
+    padding: 3rem 0;
+    font-size: 15px;
+    font-family: 'Epilogue', sans-serif;
+
+}
+
+/* form */
+form {
+    background-color: #FFD8D8;
+    border-radius: 0.76rem;
+    box-shadow: 0.25rem 0.25rem 0.25rem #180E20;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: min-content;
+    font:bold;
+}
+label {
+    font-size: 0.9rem;
+    padding: 0.125rem 0.25rem;
+    text-shadow: 0.125rem 0.125rem 0.125rem #180E20;
+}
+
+.itemContainer {
+    /* border: 0.062rem #180E20 ; */
+    display: flex;
+    flex-direction: column;
+    height: 7rem;
+    padding: 0.5rem;
+}
+
+.itemContainerRadio {
+    /* border: 0.063rem #180E20; */
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*main button*/
+button {
+    background-color: #7A2661;
+    border-radius: 0.25rem;
+    border: none;
+    box-shadow: 0.25rem 0.25rem 0.25rem #180E20;
+    color: #180E20;
+    font-size: 1.05rem;
+    margin: 1.25rem auto;
+    width: 12rem;
+    
+}
+/*form control*/
+.form-control[aria-invalid="true"] {
+    outline: 2px solid rgb(249, 135, 94);
+}
+
+/*imputs*/
+input[type="radio"] {
+    margin: 0 0 0 1rem;
+}
+input:focus {
+    background-color: #C6C6C6;
+    border-radius: 0.3rem;
+    color: #180E20;
+}
+
+input {
+    background-color: #450028;
+    border-radius: 0.2rem;
+    color: #C6C6C6;
+    font-size: 0.8rem;
+   
+}
+
+.input-message-error {
+    color: #E82733;
+    font-size: 0.8rem;
+    display: none;
+    margin: 0.24rem;
+}
+
+/*button*/
+
+button:hover {
+    background-color: #914384;
+}
+
+button:active {
+    background-color: #180E20;
+    color: #C6C6C6;
+
+}
+/*media*/
+
+@media (min-width: 768px) {
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 45rem;
+    }
+    .itemContainer {
+        flex-direction: column;
+        height: 4.5rem;
+        width: 21rem;
+    }
+    .itemContainerAdress {
+        width: 45rem;
+    }
+}
+
+@media (min-width: 425px) {
+    .itemContainer {
+        display: flex;
+        flex-direction: column;
+        height: 4rem;
+
+    }
+    .itemContainerRadio {
+        align-items: center;
+        height: 1.74rem;
+        width: 12.4rem;
+    }
+    .Error-free-container {
+        display: flex;
+        flex-direction: row;
+        width: 22rem;
+    }
+    .form-label {
+        width: 11rem;
+    }
+    input {
+        height: 1rem;
+    }
+    .itemContainerAdress {
+        display: flex;
+        height: 4.5rem;
+        flex-direction: column;
+    }
+}
+
+

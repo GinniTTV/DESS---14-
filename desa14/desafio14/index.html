@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 14</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <form id="uploadForm" onsubmit="onSubmit(event)">
+        <div class="itemContainer">
+            <div class="Error-free-container">
+                <label for="name" class="form-label">Primer nombre:</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <p id="nameError" class="input-mesagge-error"></p> 
+        </div>
+        <div class="itemContainer ">
+            <div class="Error-free-container">
+                <label for="lastName" class="form-label">Primer apellido:</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" required>
+            </div>
+            <p id="lastNameError" class="input-mesagge-error"></p>
+        </div>
+        <div class="itemContainer">
+            <div class="Error-free-container">
+                <label for="" class="form-label">Tipo de documento</label>
+                <div class="itemContainerRadio">
+                    <input type="radio" class="form-input-radio" id="dni" name="doc">
+                    <label for="dni" class="form-label-radio">DNI</label>
+                    <input type="radio" class="form-input-radio" id="cuil" name="doc">
+                    <label for="cuil" class="form-label-radio">CUIL</label>
+                </div>
+            </div>
+            <p id="docError" class="input-mesagge-error"></p>
+        </div>
+        <div class="itemContainer">
+            <div class="Error-free-container">
+                <label for="numDoc" class="form-label">Número de documento:</label>
+                <input type="textDocument" class="form-control" id="numDoc" name="numDoc" required>
+            </div>
+            <p id="numDocError" class="input-mesagge-error"></p>
+        </div>
+        <div class="itemContainer itemContainerAdress">
+            <label for="adress" class="form-label">Dirección:</label>
+            <input type="text" class="form-control" id="adress" name="adress">
+            <p id="adressError" class="input-mesagge-error"></p>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+    <script src="../js/validations.js"></script>
+    <script src="../js/upload.js"></script>
+</body>
+</html>
